@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Agriculture of Our Village</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:10px;
+padding:10px;
+background:#f4f4f4;
+}
+
+h1{
+text-align:center;
+margin-top:40px;
+}
+
+/* Section layout */
+
+.agri-container{
+display:flex;
+align-items:center;
+gap:30px;
+padding:40px;
+}
+
+/* Image */
+
+.agri-image img{
+width:600px;
+border-radius:10px;
+}
+
+/* Text */
+
+.agri-text{
+width:50%;
+font-size:20px;
+line-height:1.6;
+}
+
+/* Back button */
+
+.back{
+text-align:center;
+margin-top:40px;
+}
+
+a{
+text-decoration:none;
+color:blue;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>farming in Our Village</h1>
+
+<div class="agri-container">
+
+<div class="agri-image">
+<img src="{{ url_for('static', filename='farmer.jpg') }}">
+</div>
+
+<div class="agri-text">
+
+<p>
+Agriculture is the backbone of our village. Most of the villagers depend on farming for their livelihood. Farmers grow crops such as cotton, soybean, wheat, and vegetables. Agriculture not only provides food but also supports the village economy. Farmers work very hard in the fields and their dedication plays an important role in the development of our village.
+</p>
+
+<p>
+आपल्या गावात शेती हा मुख्य व्यवसाय आहे. गावातील बहुतांश लोक आपला उदरनिर्वाह शेतीवर करतात. शेतकरी कापूस, सोयाबीन, गहू आणि विविध भाजीपाला पिकवतात. शेतीमुळे केवळ अन्नपुरवठा होत नाही तर गावाच्या अर्थव्यवस्थेलाही मोठा आधार मिळतो. शेतकऱ्यांच्या कष्टामुळे आणि मेहनतीमुळे आपल्या गावाचा विकास होत आहे.
+</p>
+
+</div>
+
+</div>
+
+<div class="back">
+<a href="/">Back to Home</a>
+</div>
+
+</body>
+</html>
