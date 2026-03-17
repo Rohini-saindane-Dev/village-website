@@ -50,15 +50,10 @@ def agriculture():
 def school():
     return render_template('school.html')
 
-# Temples page
+# Temples page (IMPORTANT FIX)
 @app.route('/Temples')
 def temples():
-    return render_template("temples.html")
-
-# Culture page
-@app.route("/culture")
-def culture():
-    return render_template("culture.html")
+    return render_template("Temples.html")  # 🔥 T capital match kel
 
 # Contact page
 @app.route("/contact")
@@ -69,10 +64,16 @@ def contact():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+# Nature page
 @app.route('/nature')
 def nature():
     return render_template('nature.html')
 
-if __name__ == '__main__':
-    init_db()
-    app.run(debug=True)
+
+# 🔥 IMPORTANT FOR RENDER (MUST ADD)
+init_db()
+
+# ❌ REMOVE debug run (Render la nahi lagat)
+# if __name__ == '__main__':
+#     app.run(debug=True)
