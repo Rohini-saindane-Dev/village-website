@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>My Village - (वारूड)Warud</title>
+
+<style>
+
+body{
+background:#eb902e;
+font-family: Arial;
+margin:0;
+padding:0;
+}
+
+/* Navbar */
+
+.navbar{
+background:#db7516;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.navbar h2{
+color:white;
+margin-left:20px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:bold;
+font-size:18px;
+}
+
+.navbar a:hover{
+color:yellow;
+}
+
+/* Header */
+
+.header{
+background:#d2d1cf;
+padding:20px;
+text-align:center;
+}
+
+/* Hero Section */
+
+.hero-section{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+margin-top:40px;
+}
+
+.center-img{
+width:400px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.side-img{
+width:500px;
+border-radius:15px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Highlights */
+
+.highlights{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.highlight{
+background:#e6e0d7;
+padding:20px;
+border-radius:10px;
+text-align:center;
+width:200px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.highlight a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+
+/* Address */
+
+.address{
+text-align:center;
+font-size:18px;
+margin-top:30px;
+}
+
+/* Description */
+
+.description{
+width:70%;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.6;
+margin-top:20px;
+}
+
+/* Cards */
+
+.village-section{
+background:#11db51;
+padding:60px;
+margin-top:40px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.card{
+background:#ed8b28;
+padding:25px;
+width:300px;
+border-radius:15px;
+text-align:center;
+}
+
+.card img{
+width:250px;
+border-radius:10px;
+}
+
+.card a{
+text-decoration:none;
+font-weight:bold;
+color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<h2>Warud Village</h2>
+
+<div>
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/contact">Contact</a>
+</div>
+
+</div>
+
+<!-- Header -->
+
+<div class="header">
+
+<h1>Welcome to My Village</h1>
+<p>Discovering the Beauty and Culture of our Village</p>
+<marquee style="background:#fff; padding:10px; font-size:18px; font-weight:bold;">
+
+🌾 Welcome to Warud Village Website | 🛕 Lotan Dada Temple is the pride of our village | 🌳 Exploring the Beauty of our village
+
+</marquee>
+
+</div>
+
+<!-- Hero Images -->
+
+<div class="hero-section">
+
+<img class="side-img" src="{{ url_for('static', filename='shivaji.png') }}">
+
+<img class="center-img" src="{{ url_for('static', filename='shivaji_entry gate.jpg') }}">
+
+<img class="side-img" src="{{ url_for('static', filename='shivaji_right.png') }}">
+
+</div>
+
+<!-- Highlights -->
+
+<div class="highlights">
+
+<div class="highlight">
+<a href="/Temples">🛕 Temples</a>
+</div>
+
+<div class="highlight">
+<a href="/nature">🌳 Nature</a>
+</div>
+
+</div>
+
+<!-- Address -->
+
+<div class="address">
+
+<b>Warud</b><br>
+Taluka Shindkheda, District Dhule<br>
+Maharashtra, India
+
+</div>
+
+<!-- Description -->
+
+<div class="description">
+
+<p>
+Warud is a peaceful and beautiful village known for its culture,
+traditions, and natural beauty. The village is surrounded by
+green farms and friendly people who live together with unity.
+
+Temples, schools, farms, and village traditions make Warud
+a special place that reflects the true spirit of rural life.
+</p>
+
+</div>
+
+<!-- Village Information Cards -->
+
+<div class="village-section">
+
+<h2 style="text-align:center;">Village Information</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images.jpg') }}">
+
+<h3>🌾 Agriculture Info</h3>
+
+<p>
+Information about crops, irrigation systems,
+and modern farming techniques.
+</p>
+
+<a href="/agriculture">Read More</a>
+
+</div>
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='school.jpeg') }}">
+
+<h3>🏫 School Info</h3>
+
+<p>
+Details about village schools, teachers
+and education programs.
+</p>
+
+<a href="/school">Read More</a>
+
+</div>
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='Temple.jpg') }}">
+
+<h3>🏛 Culture & Traditions</h3>
+
+<p>
+Information about temples, festivals,
+and traditions of the village.
+</p>
+
+<a href="/Temples">Read More</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

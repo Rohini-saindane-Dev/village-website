@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Village's Schools</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin: 10px;;
+padding:10;
+background:#f3f2ee;
+}
+
+h1{
+text-align:center;
+margin-top:40px;
+}
+
+h2{
+text-align:center;
+margin-top:50px;
+}
+
+/* Section layout */
+
+.school-container,
+.school-card{
+display:flex;
+align-items:center;
+gap:20px;
+padding:30px;
+}
+
+/* Images */
+
+.school-image img,
+.school-card img{
+width:600px;
+border-radius:10px;
+}
+
+/* Text */
+
+.school-text{
+width:90%;
+font-size:20px;
+line-height:1.6;
+}
+
+/* Back button */
+
+.back{
+text-align:center;
+margin-bottom:40px;
+}
+
+a{
+text-decoration:none;
+color:blue;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>ZP Primary School</h1>
+
+<!-- First Section -->
+
+<div class="school-container">
+
+<div class="school-image">
+<img src="{{ url_for('static', filename='school3.jpeg') }}">
+</div>
+
+<div class="school-text">
+<p>
+Our village ZP Primary School holds a special place in the hearts of villagers.
+Earlier, the teachers whom we respectfully called "Guruji"were known for their
+discipline and dedication. Because of their strict guidance, students studied
+with focus and sincerity.
+
+The presence of Guruji created an environment where children respected education
+and worked hard in their studies. Even today, the school continues to provide
+quality education and shape the future of village students.
+</p>
+</div>
+
+</div>
+
+
+<h2>JNV High School</h2>
+<!-- second Section -->
+<div class="school-card">
+
+<img src="{{ url_for('static', filename='school2.jpeg') }}">
+
+<div class="school-text">
+<p>
+The entrance gate of our village high school stands as a symbol of knowledge 
+and opportunity for every student who walks through it. For many years, this 
+gate has welcomed generations of students who came here with dreams of learning 
+and building a better future.
+
+Every morning, students pass through this gate with enthusiasm to gain 
+education, discipline, and values. The school campus behind this gate has 
+witnessed countless memories of learning, friendship, and growth. It remains 
+a proud landmark of education and inspiration for the entire village community.
+</p>
+</div>
+
+</div>
+
+
+
+<!-- Third Section -->
+
+<div class="school-card">
+
+<img src="{{ url_for('static', filename='school.jpeg') }}">
+
+<div class="school-text">
+<p>
+The village High School plays an important role in shaping the future of many students.
+For generations, it has been a place where young minds receive quality education
+and guidance from dedicated teachers.
+
+The teachers are not only educators but also mentors who inspire students to work hard
+and achieve their dreams. The school provides a disciplined and supportive learning
+environment where students develop knowledge, confidence, and good values.
+
+Many successful individuals from the village began their educational journey in this
+high school, making it a proud symbol of learning and growth for the entire community.
+</p>
+</div>
+
+</div>
+
+
+<!-- Third Section -->
+
+
+<div class="back">
+<a href="/">Back to Home</a>
+</div>
+
+</body>
+</html>
