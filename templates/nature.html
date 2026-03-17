@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Nature of Our Village</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f3f2ee;
+margin:0;
+padding:20px;
+}
+
+h1{
+text-align:center;
+margin-top:30px;
+}
+
+.nature-container{
+display:flex;
+align-items:center;
+gap:40px;
+padding:40px;
+}
+
+.nature-image img{
+width:500px;
+border-radius:10px;
+}
+
+.nature-text{
+width:50%;
+font-size:20px;
+line-height:1.6;
+}
+
+.back{
+text-align:center;
+margin-top:40px;
+}
+
+a{
+text-decoration:none;
+color:blue;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Natural Beauty of Our Village</h1>
+
+<div class="nature-container">
+
+<div class="nature-image">
+<img src="{{ url_for('static', filename='nature.jpg') }}">
+</div>
+
+<div class="nature-text">
+
+<p>
+Our village is surrounded by beautiful natural scenery. Green fields,
+trees, and fresh air make the environment peaceful and healthy.
+Farm lands, open spaces, and small water sources add to the beauty
+of the village.
+</p>
+
+<p>
+People in the village live close to nature and depend on agriculture
+for their livelihood. During the rainy season the entire village
+becomes green and attractive which creates a refreshing atmosphere.
+Nature plays a very important role in the daily life of villagers.
+</p>
+
+<p> 
+आपले गाव नैसर्गिक सौंदर्याने नटलेले आहे. हिरवीगार शेती, झाडे,
+आणि स्वच्छ हवा यामुळे गावाचे वातावरण शांत आणि आरोग्यदायी आहे.
+
+पावसाळ्यात संपूर्ण गाव हिरवेगार होते आणि खूप सुंदर दिसते.
+निसर्ग हा गावकऱ्यांच्या जीवनाचा महत्त्वाचा भाग आहे आणि
+शेती हा त्यांच्या उपजीविकेचा मुख्य आधार आहे.
+</p>
+</div>
+
+</div>
+
+<div class="back">
+<a href="/">Back to Home</a>
+</div>
+
+</body>
+</html>
