@@ -174,10 +174,9 @@ color:black;
 
 <h1>Welcome to My Village</h1>
 <p>Discovering the Beauty and Culture of our Village</p>
+
 <marquee style="background:#fff; padding:10px; font-size:18px; font-weight:bold;">
-
 🌾 Welcome to Warud Village Website | 🛕 Lotan Dada Temple is the pride of our village | 🌳 Exploring the Beauty of our village
-
 </marquee>
 
 </div>
@@ -273,7 +272,8 @@ and education programs.
 
 <div class="card">
 
-<img src="{{ url_for('static', filename='Temple.jpg') }}">
+<!-- 🔥 FIXED IMAGE NAME -->
+<img src="{{ url_for('static', filename='temple.jpg') }}">
 
 <h3>🏛 Culture & Traditions</h3>
 
@@ -290,5 +290,9 @@ and traditions of the village.
 
 </div>
 
+<!-- ✅ JS ADDED -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>
+
