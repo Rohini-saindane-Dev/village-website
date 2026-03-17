@@ -53,7 +53,7 @@ def school():
 # Temples page (IMPORTANT FIX)
 @app.route('/Temples')
 def temples():
-    return render_template("Temples.html")  # 🔥 T capital match kel
+    return render_template("Temples.html") # 🔥 T capital match kel
 
 # Contact page
 @app.route("/contact")
