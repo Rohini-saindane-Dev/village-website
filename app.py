@@ -51,9 +51,9 @@ def school():
     return render_template('school.html')
 
 # Temples page (IMPORTANT FIX)
-@app.route("/temples")   
+@app.route("/temples")
 def temples():
-    return render_template("temple.html"))
+    return render_template("temple.html")
 # Contact page
 @app.route("/contact")
 def contact():
