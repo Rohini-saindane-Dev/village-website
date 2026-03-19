@@ -51,9 +51,9 @@ def school():
     return render_template('school.html')
 
 # Temples page (IMPORTANT FIX)
-@app.route('/Temples')
+@app.route('/temples')
 def temples():
-    return render_template("Temples.html") # 🔥 T capital match kel
+    return render_template("temples.html") 
 
 # Contact page
 @app.route("/contact")
@@ -71,9 +71,7 @@ def nature():
     return render_template('nature.html')
 
 
-# 🔥 IMPORTANT FOR RENDER (MUST ADD)
-init_db()
 
-# ❌ REMOVE debug run (Render la nahi lagat)
+init_db()
 # if __name__ == '__main__':
 #     app.run(debug=True)
