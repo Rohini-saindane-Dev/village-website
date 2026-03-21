@@ -196,13 +196,6 @@ line-height:1.6;
     flex-direction: column;
   }
 
-  .side-img,
-  .center-img {
-    width: 90%;
-  }
-
-}
-
   .cards {
     flex-direction: column;
     align-items: center;
@@ -216,12 +209,9 @@ line-height:1.6;
     flex-direction: column;
   }
 
-  .temple-image img {
-    width: 100%;
-  }
-
   .temple-text {
     width: 100%;
   }
 
+}
 }
