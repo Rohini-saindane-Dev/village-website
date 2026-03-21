@@ -175,7 +175,7 @@ line-height:1.6;
 .track {
   display: inline-block;
   white-space: nowrap;
-  animation: scroll 12s linear infinite;
+  animation: scroll 15s linear infinite;
   font-size: 18px;
   font-weight: bold;
 }
