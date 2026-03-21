@@ -166,3 +166,25 @@ width:50%;
 font-size:20px;
 line-height:1.6;
 }
+.marquee {
+  overflow: hidden;
+  background: #fff;
+  padding: 10px 0;
+}
+
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 12s linear infinite;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
