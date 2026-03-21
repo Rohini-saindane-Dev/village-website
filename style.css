@@ -166,3 +166,39 @@ width:50%;
 font-size:20px;
 line-height:1.6;
 }
+.header {
+  background: #d2d1cf;
+  padding: 25px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollText 12s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
