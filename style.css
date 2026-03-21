@@ -194,13 +194,14 @@ line-height:1.6;
 
   .hero-section {
     flex-direction: column;
-    gap: 15px;
   }
 
   .side-img,
   .center-img {
     width: 90%;
   }
+
+}
 
   .cards {
     flex-direction: column;
