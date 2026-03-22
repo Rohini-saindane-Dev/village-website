@@ -215,3 +215,76 @@ line-height:1.6;
 
 }
 }
+/* GLOBAL IMAGE FIX */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HERO SECTION - DESKTOP */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.side-img {
+  width: 30%;
+}
+
+.center-img {
+  width: 30%;
+}
+
+/* CARDS - DESKTOP */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* TEMPLE PAGE - DESKTOP */
+.temple-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* 🔥 MOBILE VIEW */
+@media (max-width: 768px) {
+
+  /* Hero vertical */
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .side-img,
+  .center-img {
+    width: 90%;
+  }
+
+  /* Cards vertical */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  /* Temple vertical */
+  .temple-container {
+    flex-direction: column;
+  }
+
+  .temple-image img {
+    width: 100%;
+  }
+
+  .temple-text {
+    width: 100%;
+  }
+
+}
